@@ -1,0 +1,66 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/app/blog/[slug]/single.Post.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************/
+.single_Post_container__kgxbr {
+    display: flex;
+    gap: 100px;
+}
+
+.single_Post_imgContainer__ot0I2 {
+    flex: 1 1;
+    position: relative;
+    height: calc(100vh - 200px);
+}
+
+.single_Post_img__jQBVY {
+    object-fit: cover;
+}
+
+.single_Post_textgContainer__8wlwP {
+    flex: 2 1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.single_Post_title__O0tqz {
+    font-size: 60px;
+}
+
+.single_Post_detail__Dnoeq {
+    display: flex;
+    gap: 20px;
+}
+
+.single_Post_avatar__YmD_l {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.single_Post_content__536KT {
+    font-size: 20px;
+}
+
+@media (max-width: 768px){
+    .single_Post_imgContainer__ot0I2 {
+        display: none;
+    }
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/components/postUser/postUser.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+.postUser_container__dKtv0 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.postUser_title__oP_Sa {
+    color: gray;
+    font-weight: bold;
+}
+
+.postUser_username__OZ0h_ {
+    font-weight: 500;
+}
