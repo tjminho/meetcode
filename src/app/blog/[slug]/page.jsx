@@ -4,7 +4,7 @@ import PostUser from "@/components/postUser/postUser";
 import { Suspense } from "react";
 import { getPost } from "@/lib/data";
 
-const SinglePostPage = async ({params}) => {
+const SinglePostPage = async ({ params }) => {
 
     const {slug} = params;
     const post = await getPost(slug);
@@ -21,11 +21,11 @@ const SinglePostPage = async ({params}) => {
                 <div className={styles.detail}>
                     <Image src={post.img} alt="" width={50} height={50} className={styles.avatar} />
 
-                    {post && (
+                    {/* {post && (
                         <Suspense fallback={<div>loading...</div>}>
                             <PostUser userid={post.userId} />
                         </Suspense>
-                    )}
+                    )} */}
                     <div className={styles.detailText}>
                         <span className={styles.detailTitle}>Published</span>
                         <span className={styles.detailValue}>{post.createdAt.toString().slice(0,16)}</span>
