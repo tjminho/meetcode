@@ -6,7 +6,6 @@ import { getPosts } from "@/lib/data"
 const BlogPage = async () => {
 
     const posts = await getPosts();
-    
     return (
         <div className={style.container}>
             {posts.map((post)=> (

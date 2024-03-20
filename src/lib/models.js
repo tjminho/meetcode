@@ -53,7 +53,7 @@ const postSchema = new mongoose.Schema(
         },
         userId: {
             type: String,
-            default: false,
+            required: true,
         },
         slug: {
             type: String,
