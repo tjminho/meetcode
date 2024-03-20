@@ -10,7 +10,7 @@ export const getPosts = async () => {
         return posts;
     }catch(err){
         console.log(err);
-        throw new Error("failed to fetch posts!")
+        throw new Error("failed to fetch posts!");
     }
 };
 
@@ -21,7 +21,7 @@ export const getPost = async (slug) => {
         return post;
     }catch(err){
         console.log(err);
-        throw new Error("failed to fetch post!")
+        throw new Error("failed to fetch post!");
     }
 };
 
@@ -32,7 +32,7 @@ export const getUsers = async () => {
         return users;
     }catch(err){
         console.log(err);
-        throw new Error("failed to fetch users!")
+        throw new Error("failed to fetch users!");
     }
 };
 
@@ -43,6 +43,6 @@ export const getUser = async (id) => {
         return user;
     }catch(err){
         console.log(err);
-        throw new Error("failed to fetch user!")
+        throw new Error("failed to fetch user!");
     }
 };
