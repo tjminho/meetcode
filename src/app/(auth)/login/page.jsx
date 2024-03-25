@@ -1,7 +1,18 @@
-const LoginPage = () => {
-    return (
-        <div>LoginPage</div>
-    )
-}
+import { signIn } from "@/lib/auth";
 
-export default LoginPage
+const LoginPage = () => {
+
+    const handlsGithubLogin = async (e) => {
+        "use server";
+        await signIn("github");
+    }
+    return (
+        <div>
+            <form action={handlsGithubLogin}>
+            <button>Login with Github</button>
+            </form>
+        </div>
+    );
+};
+
+export default LoginPage;
