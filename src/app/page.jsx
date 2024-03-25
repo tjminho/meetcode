@@ -1,8 +1,10 @@
 import Image from "next/image";
 import styles from "./home.module.css"
+import SubNavLink from "@/components/navbar/links/subnavLink/subnavLink";
 
 const Home = () => {
   return <div className={styles.container}>
+ 
     <div className={styles.textContainer}>
       <h1 className={styles.title}>함께 모여 코딩하고 성장하는 (인천)미트코딩(meetCoding)입니다📱</h1>
       <p className={styles.desc}>
@@ -21,8 +23,9 @@ const Home = () => {
     </div>
     <div className={styles.imageContainer}>
       <Image src="/hero.gif" alt="" fill className={styles.heroImg} />
-    </div>
-  </div>;
+    </div>    
+  </div>
+
 };
 
 export default Home;

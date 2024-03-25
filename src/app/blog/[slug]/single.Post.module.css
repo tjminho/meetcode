@@ -29,11 +29,11 @@
     gap: 20px;
 }
 
-.avatar {
-    object-fit: cover;
-    border-radius: 50%;
+.detailText {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
-
 
 .content {
     font-size: 20px;

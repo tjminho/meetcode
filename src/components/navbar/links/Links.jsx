@@ -7,16 +7,41 @@ import Image from "next/image";
 
 const links = [
     {
-        title: "홈",
-        path:"/",
-    },
-    {
         title: "모각코",
         path:"/about",
     },
     {
-        title: "Contact",
-        path:"/contact",
+        title: "지식모음",
+        path:"/knowledge",
+        submenu:[
+                   {
+            title: "강좌모음",
+            path: "",
+        }, 
+                   {
+            title: "기술블로그",
+            path: "",
+        }, 
+        ]
+
+    },
+    {
+        title: "커뮤니티",
+        path:"/community",
+        submenu:[
+                    {
+            title: "스터디",
+            path: "study",
+        }, 
+                    {
+            title: "질문과답변",
+            path: "qna",
+        }, 
+                    {
+            title: "자유게시판",
+            path: "freeboard",
+        }, 
+        ]
     },
     {
         title: "블로그",
