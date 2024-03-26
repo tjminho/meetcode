@@ -1,15 +1,19 @@
-import { signIn } from "@/lib/auth";
+import { handleGithubLogin, handleGoogleLogin, handleKakaoLogin } from "@/lib/action";
 
-const LoginPage = () => {
+const LoginPage = async () => {
 
-    const handlsGithubLogin = async (e) => {
-        "use server";
-        await signIn("github");
-    }
     return (
         <div>
-            <form action={handlsGithubLogin}>
-            <button>Login with Github</button>
+            <form action={handleGoogleLogin}>
+            <button><img src="/login/google.svg" width={30} height={30} />Login with Google</button>
+            </form>
+
+            <form action={handleKakaoLogin}>
+            <button><img src="/login/kakao.svg" width={30} height={30} />Login with Kakao</button>
+            </form>
+
+            <form action={handleGithubLogin}>
+            <button><img src="/login/github.svg" width={30} height={30} />Login with Github</button>
             </form>
         </div>
     );
